@@ -41,6 +41,7 @@ class TerminalWindow(object):
         """Initialize the Vispy scene and a canvas, connect up the events to this object.
         """
         self.canvas = vispy.scene.SceneCanvas(
+                                vsync=True,
                                 title='HAL9000 Terminal - nucl.ai Courses',
                                 size=(1280, 720),
                                 bgcolor='#F0F0F0',
